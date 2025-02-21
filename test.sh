@@ -10,16 +10,16 @@ fi
 
 SID=$(echo "${1}" | tr -d '[:lower:]')
 test_mul=$(echo "${2}")
-SID2=$(echo "${3}" | tr -d '[:lower:]')
-SID3=$(echo "${4}" | tr -d '[:lower:]')
-SID4=$(echo "${5}" | tr -d '[:lower:]')
+value=$(echo "${3}" | tr -d '[:lower:]')
+test=$(echo "${4}" | tr -d '[:lower:]')
+execute=$(echo "${5}" | tr -d '[:lower:]')
 
 echo "$SID"
 if [ "$test_mul" == "yes" ]; then
-    echo "$SID2"
-    echo "$SID3"
+    echo "$value"
+    echo "$test"
 else
-    echo "$SID4"
+    echo "$execute"
 fi
 echo "very fast"
 echo "script changes"
